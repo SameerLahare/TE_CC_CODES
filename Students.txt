@@ -1,0 +1,34 @@
+public class Students {
+    
+    Public String name{get;set;}
+    Public String cla{get;set;}
+    Public String div{get;set;}
+    Public Integer roll{get;set;}
+    
+    
+    Public Students(String name, String c1, String div, Integer roll)
+    {
+        this.name=name;
+        this.cla=c1;
+        this.div=div;
+        this.roll=roll;
+    }
+    
+    Public void displayInfo()
+    {
+        System.debug('Name:'+ name);
+        System.debug('Class:'+ cla);
+        System.debug('Div:'+ div);
+        System.debug('Roll_No:'+ roll);
+    }    
+        
+    public static void main()
+    {
+        Students s=new Students('swamini', 'TE', 'B',41);
+		s.displayInfo();
+	}
+         
+    
+    
+
+}

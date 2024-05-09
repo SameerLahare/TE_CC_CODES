@@ -1,0 +1,38 @@
+public class LinearSearch 
+{
+public static Integer linearSearch(Integer[] arr, Integer target)
+{
+
+        if (arr == null || arr.size() == 0)
+        {
+
+            return -1;
+
+        }
+
+        for (integer i = 0; i < arr.size(); i++)
+        {
+            if (arr[i] == target)
+            {
+
+                return i;
+
+            }
+
+        }
+
+        
+        return -1;
+
+    }
+	public static void main()
+    {
+        Integer[] arr = new Integer[]{1, 2, 3, 4, 5};
+		Integer target = 3;
+
+        Integer index = LinearSearch.linearSearch(arr, target);
+        System.debug('element found at position : ' + index);
+}
+ 
+
+}
